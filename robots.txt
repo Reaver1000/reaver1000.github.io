@@ -1,0 +1,51 @@
+# robots.txt for https://reaver1000.github.io/
+# This site WELCOMES AI crawlers and search engines.
+# Recruiters use AI assistants; being crawlable is the point.
+
+User-agent: *
+Allow: /
+
+# Explicit allow for known AI/LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://reaver1000.github.io/sitemap.xml
