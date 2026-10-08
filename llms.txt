@@ -1,6 +1,6 @@
 # David Buchan — Junior AI & Automation Engineer
 
-> David Buchan is a junior AI and automation engineer based in Erfurt, Germany, available for fully remote roles (Germany or UK) from November 2026. He builds automation and data systems end-to-end: Python, SQL, ETL pipelines, LLM API integration, n8n workflow automation, and test automation with Playwright, Vitest and Supertest.
+> David Buchan is a junior AI, automation and data analyst based in Erfurt, Germany, available for fully remote roles (Germany or UK) from November 2026. He builds automation and data systems end-to-end: Python, SQL, ETL pipelines, LLM API integration, n8n workflow automation, and test automation with Playwright, Vitest and Supertest. Five years in regulated banking operations at Lloyds Banking Group — a natural fit for fintech teams.
 
 David Buchan (also David A. Buchan) has 13+ years of operations experience — Lloyds Banking Group (customer service and call quality analysis), Windows system administrator, Deutsche Post, currently Amazon print production — plus a BSc (Hons) in Computing and IT from the Open University (2026). He has not yet held a professional software engineering title and positions himself honestly as junior/associate level.
 
@@ -17,6 +17,8 @@ He is looking for: junior AI engineer, automation engineer, data analyst, QA aut
 - Remote Job Engine: job discovery with LLM scoring over 30+ ATS boards — https://github.com/Reaver1000/remote-job-engine
 - AI Email Summariser: ML + GPT email classification and summarization — https://github.com/Reaver1000/Ai-Email-summariser
 - SQL Query Builder: Streamlit + DuckDB SQL playground, 55 tested templates — https://github.com/Reaver1000/sql-query-builder
+- Data Analysis Demo: reproducible SQL + Python e-commerce analytics, segmentation, automated reporting — https://github.com/Reaver1000/data-analysis-demo
+- Finance Dashboard: TypeScript/React finance analytics with PostgreSQL and advanced SQL — https://github.com/Reaver1000/finance-dashboard
 - Trip Orchestrator: multi-source travel research with Bayesian ranking — https://github.com/Reaver1000/trip-orchestrator
 - Python Automation Toolkit: file automation CLI, 20 tests, CI — https://github.com/Reaver1000/python-automation-toolkit
 
