@@ -9,11 +9,21 @@
 <meta property="og:title" content="David Buchan — Junior AI, Automation & Data · Remote (Germany / UK)">
 <meta property="og:description" content="Python, SQL, ETL, LLM API integration, n8n automation, Playwright testing. Five years Lloyds banking ops. BSc (Hons) Computing and IT. Remote roles from November 2026.">
 <meta property="og:type" content="profile">
+<meta property="og:image" content="https://reaver1000.github.io/assets/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://reaver1000.github.io/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://reaver1000.github.io/#webpage",
+      "url": "https://reaver1000.github.io/",
+      "name": "David Buchan — Junior AI, Automation & Data Analyst",
+      "inLanguage": "en",
+      "mainEntity": { "@id": "https://reaver1000.github.io/#person" }
+    },
     {
       "@type": "Person",
       "@id": "https://reaver1000.github.io/#person",
@@ -21,6 +31,18 @@
       "alternateName": "David A. Buchan",
       "jobTitle": "Junior AI, Automation & Data Analyst",
       "email": "mailto:davidbuchan1000@googlemail.com",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://reaver1000.github.io/assets/og-card.png",
+        "width": 1200,
+        "height": 627
+      },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Junior AI, Automation & Data Analyst",
+        "skills": "Python, SQL, ETL pipelines, LLM API integration, n8n workflow automation, Playwright, Vitest, Supertest, React, TypeScript, Node.js",
+        "experienceRequirements": "Junior or associate level. First professional software engineering role."
+      },
       "description": "Junior AI, automation and data analyst in Erfurt, Germany. Python, SQL, ETL pipelines, LLM API integration, n8n workflow automation, test automation with Playwright, Vitest and Supertest. Five years in regulated banking operations at Lloyds Banking Group. Available for fully remote roles from November 2026.",
       "address": {
         "@type": "PostalAddress",
@@ -34,65 +56,233 @@
         "https://github.com/Reaver1000",
         "https://www.linkedin.com/in/david-a-buchan/"
       ]
-    },
-    {
-      "@type": "WebSite",
-      "url": "https://reaver1000.github.io/",
-      "name": "David Buchan — Junior AI & Automation Engineer",
-      "inLanguage": "en",
-      "about": { "@id": "https://reaver1000.github.io/#person" }
     }
   ]
 }
 </script>
 <style>
-  :root { --ink:#1a2332; --mut:#5b6b80; --line:#dde4ec; --bg:#f7f9fb; --chip:#eef3f8; --acc:#0b5cad; }
+  @font-face {
+    font-family:"Space Grotesk"; src:url("/assets/fonts/SpaceGrotesk.woff2") format("woff2");
+    font-weight:300 700; font-style:normal; font-display:swap;
+  }
+  :root {
+    --bg:#0d1117; --bg2:#131a24; --bg3:#1a2333; --line:#2b3442;
+    --text:#e8eef6; --mut:#93a0b4; --acc:#7ee787; --acc-hot:#39d353;
+    --acc-dim:#2ea04370; --blue:#6cb2ff;
+    --mono:ui-monospace,"Cascadia Code",Consolas,Menlo,monospace;
+    --disp:"Space Grotesk",system-ui,sans-serif;
+  }
   * { box-sizing:border-box; margin:0; }
-  body { font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--ink); background:#fff; }
-  main { max-width:780px; margin:0 auto; padding:40px 22px 60px; }
-  h1 { font-size:1.9rem; line-height:1.2; letter-spacing:-.5px; }
-  h2 { font-size:1.25rem; margin:2.2rem 0 .8rem; padding-top:1.4rem; border-top:1px solid var(--line); }
-  .tag { color:var(--acc); font-weight:600; font-size:.95rem; }
-  .chips { display:flex; flex-wrap:wrap; gap:8px; margin:1.1rem 0 0; }
-  .chip { background:var(--chip); border:1px solid var(--line); border-radius:16px; padding:4px 12px; font-size:.85rem; }
-  .facts { background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:16px 20px; margin:1.4rem 0; }
-  .facts li { margin:.35rem 0 .35rem 1.1rem; }
-  ul.skills { list-style:none; padding:0; }
-  ul.skills li { padding:6px 0; border-bottom:1px dashed var(--line); }
-  ul.skills b { display:inline-block; min-width:150px; }
-  .proj { margin:1rem 0; padding:14px 16px; border:1px solid var(--line); border-radius:10px; }
-  .proj h3 { font-size:1rem; margin-bottom:4px; }
-  .proj a { color:var(--acc); text-decoration:none; font-size:.85rem; }
-  .proj p { font-size:.92rem; color:#333; }
-  details { border:1px solid var(--line); border-radius:10px; padding:12px 16px; margin:.6rem 0; }
-  summary { font-weight:600; cursor:pointer; }
-  details p { margin-top:.6rem; font-size:.93rem; }
-  footer { border-top:1px solid var(--line); margin-top:2.5rem; padding-top:1.2rem; font-size:.85rem; color:var(--mut); }
-  a:hover { text-decoration:underline; }
+  html { scroll-behavior:smooth; }
+  body {
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    color:var(--text); background:var(--bg); overflow-x:hidden;
+  }
+  body::before {
+    content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
+    background-image:
+      radial-gradient(1px 1px at 25px 35px, #ffffff24, transparent),
+      radial-gradient(1px 1px at 160px 130px, #ffffff18, transparent),
+      radial-gradient(1.5px 1.5px at 320px 90px, #7ee7871f, transparent),
+      radial-gradient(1px 1px at 480px 210px, #ffffff20, transparent),
+      radial-gradient(1px 1px at 90px 280px, #6cb2ff1a, transparent);
+    background-size:520px 340px;
+  }
+  .orb { position:fixed; border-radius:50%; filter:blur(90px); z-index:-3; pointer-events:none; }
+  .orb.a { width:520px; height:520px; right:-140px; top:-160px; background:#1b4d3a66; animation:drift 26s ease-in-out infinite alternate; }
+  .orb.b { width:440px; height:440px; left:-160px; bottom:-120px; background:#173a5e55; animation:drift 32s ease-in-out infinite alternate-reverse; }
+  @keyframes drift { from { transform:translate(0,0) scale(1); } to { transform:translate(-60px,50px) scale(1.15); } }
+
+  nav {
+    position:fixed; top:0; left:0; right:0; z-index:10;
+    background:#0d111799; backdrop-filter:blur(12px); border-bottom:1px solid #2b344288;
+  }
+  .nav-in { max-width:920px; margin:0 auto; padding:14px 24px; display:flex; align-items:center; gap:22px; }
+  .logo { font:700 1.05rem var(--disp); color:var(--text); letter-spacing:.5px; }
+  .logo span { color:var(--acc); }
+  .nav-links { display:flex; gap:18px; margin-left:auto; font:.85rem var(--mono); }
+  .nav-links a { color:var(--mut); }
+  .nav-links a:hover { color:var(--text); text-decoration:none; }
+  .nav-cta {
+    font:600 .8rem var(--mono); color:#0d1117; background:var(--acc);
+    padding:7px 15px; border-radius:8px; white-space:nowrap;
+  }
+  .nav-cta:hover { background:var(--acc-hot); text-decoration:none; }
+  @media (max-width:720px) { .nav-links { display:none; } }
+
+  main { max-width:920px; margin:0 auto; padding:120px 24px 80px; }
+  .prompt { font:14px var(--mono); color:var(--mut); margin-bottom:20px; }
+  .prompt b { color:var(--acc); font-weight:600; }
+  h1 {
+    font:700 clamp(2.6rem, 8vw, 4.6rem)/1.02 var(--disp);
+    letter-spacing:-2px; text-transform:uppercase; margin-bottom:14px;
+  }
+  .role {
+    font:600 clamp(1.05rem, 3vw, 1.5rem) var(--disp); letter-spacing:.5px;
+    background:linear-gradient(90deg, var(--acc), var(--blue));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    margin-bottom:10px;
+  }
+  .stack-line { font:.95rem var(--mono); color:var(--mut); margin-bottom:26px; }
+  .chips { display:flex; flex-wrap:wrap; gap:9px; margin-bottom:34px; }
+  .chip {
+    background:var(--bg3); border:1px solid var(--line); border-radius:18px;
+    padding:5px 14px; font-size:.84rem;
+  }
+  .chip.hot {
+    color:var(--acc); border-color:var(--acc-dim);
+    animation:pulse 2.6s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100% { box-shadow:0 0 0 #2ea04300; } 50% { box-shadow:0 0 16px #2ea04340; } }
+  .cta-row { display:flex; flex-wrap:wrap; gap:12px; }
+  .btn {
+    font:600 .92rem var(--mono); padding:12px 22px; border-radius:10px;
+    border:1px solid var(--line); color:var(--text); background:var(--bg2);
+    transition:transform .15s, border-color .15s, background .15s;
+  }
+  .btn:hover { text-decoration:none; transform:translateY(-2px); border-color:var(--acc-dim); }
+  .btn.primary { background:var(--acc); color:#0d1117; border-color:var(--acc); }
+  .btn.primary:hover { background:var(--acc-hot); }
+
+  .marquee { overflow:hidden; border-block:1px solid var(--line); margin:52px 0; padding:13px 0; }
+  .track { display:flex; gap:44px; width:max-content; animation:slide 42s linear infinite; }
+  .marquee:hover .track { animation-play-state:paused; }
+  .track span { font:.82rem var(--mono); color:var(--mut); letter-spacing:2px; text-transform:uppercase; white-space:nowrap; }
+  .track i { color:var(--acc); font-style:normal; }
+  @keyframes slide { to { transform:translateX(-50%); } }
+
+  h2 {
+    font:600 1.05rem var(--mono); color:var(--acc); margin:3rem 0 1.1rem;
+    display:flex; align-items:center; gap:12px;
+  }
+  h2 .no { color:var(--mut); font-weight:400; }
+  h2::after { content:""; flex:1; height:1px; background:var(--line); }
+
+  .facts {
+    background:var(--bg2); border:1px solid var(--line); border-left:3px solid var(--acc);
+    border-radius:12px; padding:20px 24px;
+  }
+  .facts li { margin:.5rem 0 .5rem 1.2rem; }
+  .facts li::marker { color:var(--acc); }
+
+  ul.skills { list-style:none; padding:0; display:grid; gap:12px; }
+  ul.skills li {
+    display:grid; grid-template-columns:220px 1fr; gap:16px; padding:15px 18px;
+    background:linear-gradient(180deg, var(--bg2), var(--bg)); border:1px solid var(--line);
+    border-radius:12px; transition:border-color .15s, transform .15s;
+  }
+  ul.skills li:hover { border-color:#4d5969; transform:translateX(4px); }
+  ul.skills b { font:600 .84rem var(--mono); color:var(--acc); }
+
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .proj {
+    background:var(--bg2); border:1px solid var(--line); border-radius:12px;
+    padding:20px 20px 16px; position:relative; overflow:hidden;
+    transition:border-color .15s, box-shadow .15s, transform .15s;
+  }
+  .proj::before {
+    content:""; position:absolute; inset:0 0 auto 0; height:2px;
+    background:linear-gradient(90deg, var(--acc), transparent 65%); opacity:0;
+    transition:opacity .15s;
+  }
+  .proj:hover { transform:translateY(-3px); border-color:var(--acc-dim); box-shadow:0 10px 32px #2ea0431c; }
+  .proj:hover::before { opacity:1; }
+  .proj h3 { font:600 1.02rem var(--disp); margin-bottom:7px; }
+  .proj p { font-size:.88rem; color:#b5bfcc; margin-bottom:12px; }
+  .proj a {
+    font:.76rem var(--mono); color:var(--acc); background:var(--bg3);
+    border:1px solid var(--line); border-radius:7px; padding:4px 10px;
+  }
+  .proj a:hover { text-decoration:none; border-color:var(--acc-dim); }
+
+  .story {
+    background:linear-gradient(180deg, var(--bg2), var(--bg));
+    border:1px solid var(--line); border-radius:12px; padding:22px 26px;
+  }
+  .story p { color:#c4ccd6; }
+
+  details {
+    background:var(--bg2); border:1px solid var(--line); border-radius:12px;
+    padding:14px 20px; margin:.6rem 0; transition:border-color .15s;
+  }
+  details[open] { border-color:var(--acc-dim); }
+  summary { font-weight:600; cursor:pointer; list-style:none; display:flex; align-items:center; gap:11px; }
+  summary::-webkit-details-marker { display:none; }
+  summary::before { content:">"; font:600 .9rem var(--mono); color:var(--acc); }
+  details[open] summary::before { content:"v"; }
+  details p { margin-top:.7rem; font-size:.93rem; color:#b5bfcc; }
+
+  footer { border-top:1px solid var(--line); margin-top:3.4rem; padding-top:1.5rem; font:.85rem var(--mono); color:var(--mut); }
+  footer a { color:var(--acc); }
+  .last-line { margin-top:.6rem; color:#6b7686; }
+
+  [data-reveal] { opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease; }
+  [data-reveal].in { opacity:1; transform:none; }
+
+  @media (max-width:640px) {
+    .grid { grid-template-columns:1fr; }
+    ul.skills li { grid-template-columns:1fr; gap:5px; }
+  }
+  @media (prefers-reduced-motion:reduce) {
+    .track, .orb, .chip.hot { animation:none; }
+    [data-reveal] { opacity:1; transform:none; transition:none; }
+    html { scroll-behavior:auto; }
+  }
+  @media print {
+    body { background:#fff; color:#111; }
+    body::before, .orb, nav, .marquee { display:none; }
+    main { padding-top:10px; }
+    .facts, .proj, details, .story, ul.skills li, .btn { background:#fff; border-color:#ccc; box-shadow:none; }
+    h1 { color:#000; }
+    .role { -webkit-text-fill-color:#0a6e2c; color:#0a6e2c; }
+    h2, ul.skills b, .proj a, footer a, .chip.hot { color:#0a6e2c; }
+    .cta-row { display:none; }
+  }
 </style>
 </head>
 <body>
+<div class="orb a"></div><div class="orb b"></div>
+<nav><div class="nav-in">
+  <span class="logo">DB<span>.</span></span>
+  <span class="nav-links">
+    <a href="#skills">skills</a><a href="#projects">projects</a><a href="#background">background</a><a href="#faq">faq</a>
+  </span>
+  <a class="nav-cta" href="mailto:davidbuchan1000@googlemail.com">hire me</a>
+</div></nav>
 <main>
-  <header>
-    <span class="tag">Junior AI, Automation & Data · Python · SQL · LLM APIs · n8n</span>
+  <header data-reveal>
+    <div class="prompt">david@erfurt:~$ <b>./hire-me --roles "ai, automation, data"</b></div>
     <h1>David Buchan</h1>
+    <p class="role">Junior AI, Automation & Data Analyst</p>
+    <p class="stack-line">Python · SQL · ETL · LLM APIs · n8n · Playwright · React/TypeScript</p>
     <div class="chips">
+      <span class="chip hot">Available from November 2026</span>
       <span class="chip">Fully remote</span>
       <span class="chip">Erfurt, Germany (UK citizen)</span>
-      <span class="chip">Available from November 2026</span>
       <span class="chip">English native · German C1 spoken</span>
     </div>
-    <ul class="facts">
-      <li>I build automation and data systems end-to-end: Python, SQL, ETL pipelines, LLM API integrations, n8n workflows, and test automation (Playwright, Vitest, Supertest).</li>
-      <li>13+ years of real operations experience (Lloyds Banking Group, Deutsche Post, Windows sysadmin, currently Amazon print production) — I automate processes I have actually run.</li>
-      <li>Five years in regulated banking operations at Lloyds — a natural fit for fintech and financial-services teams.</li>
-      <li>BSc (Hons) Computing and IT, Open University, completed 2026.</li>
-      <li>Looking for junior or associate roles: AI engineer, automation engineer, data analyst, QA automation, application support — fully remote from Germany, or UK-remote.</li>
-    </ul>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:davidbuchan1000@googlemail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/david-a-buchan/">LinkedIn</a>
+      <a class="btn" href="https://github.com/Reaver1000">GitHub</a>
+    </div>
   </header>
 
-  <section id="skills">
-    <h2>Skills</h2>
+  <div class="marquee" aria-hidden="true"><div class="track">
+    <span>Python <i>//</i> SQL <i>//</i> ETL <i>//</i> LLM APIs <i>//</i> n8n <i>//</i> Playwright <i>//</i> Vitest <i>//</i> Supertest <i>//</i> TypeScript <i>//</i> React <i>//</i> Node.js <i>//</i> pandas <i>//</i> DuckDB <i>//</i> PostgreSQL <i>//</i> CI/CD <i>//</i> fintech <i>//</i>&nbsp;</span>
+    <span>Python <i>//</i> SQL <i>//</i> ETL <i>//</i> LLM APIs <i>//</i> n8n <i>//</i> Playwright <i>//</i> Vitest <i>//</i> Supertest <i>//</i> TypeScript <i>//</i> React <i>//</i> Node.js <i>//</i> pandas <i>//</i> DuckDB <i>//</i> PostgreSQL <i>//</i> CI/CD <i>//</i> fintech <i>//</i>&nbsp;</span>
+  </div></div>
+
+  <ul class="facts" data-reveal>
+    <li>I build automation and data systems end-to-end: Python, SQL, ETL pipelines, LLM API integrations, n8n workflows, and test automation (Playwright, Vitest, Supertest).</li>
+    <li>13+ years of real operations experience (Lloyds Banking Group, Deutsche Post, Windows sysadmin, currently Amazon print production) — I automate processes I have actually run.</li>
+    <li>Five years in regulated banking operations at Lloyds — a natural fit for fintech and financial-services teams.</li>
+    <li>BSc (Hons) Computing and IT, Open University, completed 2026.</li>
+    <li>Looking for junior or associate roles: AI engineer, automation engineer, data analyst, QA automation, application support — fully remote from Germany, or UK-remote.</li>
+  </ul>
+
+  <section id="skills" data-reveal>
+    <h2><span class="no">//01</span> skills</h2>
     <ul class="skills">
       <li><b>AI & automation</b> LLM API integration (OpenAI, Anthropic, Gemini), prompt pipelines, n8n workflow automation, email/LLM classification systems, AI-assisted tooling</li>
       <li><b>Data</b> Python (pandas), SQL (PostgreSQL, DuckDB, SQLite), ETL pipeline design, deduplication and schema mapping, dashboards and reporting</li>
@@ -101,47 +291,51 @@
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Selected projects</h2>
-    <div class="proj">
-      <h3>ETL Data Pipeline — tested composable Python ETL framework</h3>
-      <p>Pluggable stages, schema mapping, deduplication, SQLite loading, with tests and CI on every push.</p>
-      <a href="https://github.com/Reaver1000/etl-data-pipeline">github.com/Reaver1000/etl-data-pipeline</a>
-    </div>
-    <div class="proj">
-      <h3>Remote Job Engine — job discovery with AI scoring</h3>
-      <p>Polls 30+ ATS boards, scores postings for fit using LLMs, tailors CVs. The tooling behind my own job search, in daily use.</p>
-      <a href="https://github.com/Reaver1000/remote-job-engine">github.com/Reaver1000/remote-job-engine</a>
-    </div>
-    <div class="proj">
-      <h3>AI Email Summariser — ML + GPT email classification</h3>
-      <p>Gmail/IMAP integration, interactive learning, GPT-powered summarization.</p>
-      <a href="https://github.com/Reaver1000/Ai-Email-summariser">github.com/Reaver1000/Ai-Email-summariser</a>
-    </div>
-    <div class="proj">
-      <h3>SQL Query Builder — interactive SQL playground</h3>
-      <p>Streamlit + DuckDB with 55 tested templates: joins, windows, CTEs, cohorts, RFM analytics.</p>
-      <a href="https://github.com/Reaver1000/sql-query-builder">github.com/Reaver1000/sql-query-builder</a>
-    </div>
-    <div class="proj">
-      <h3>Data Analysis Demo — reproducible SQL + Python analytics</h3>
-      <p>End-to-end e-commerce analysis pipeline: pandas, charting, customer segmentation, automated reporting.</p>
-      <a href="https://github.com/Reaver1000/data-analysis-demo">github.com/Reaver1000/data-analysis-demo</a>
-    </div>
-    <div class="proj">
-      <h3>Finance Dashboard — full-stack analytics dashboard</h3>
-      <p>TypeScript and React finance analytics with PostgreSQL, REST APIs, and advanced SQL — fintech-style reporting.</p>
-      <a href="https://github.com/Reaver1000/finance-dashboard">github.com/Reaver1000/finance-dashboard</a>
+  <section id="projects" data-reveal>
+    <h2><span class="no">//02</span> selected projects</h2>
+    <div class="grid">
+      <div class="proj">
+        <h3>ETL Data Pipeline</h3>
+        <p>Tested composable Python ETL framework. Pluggable stages, schema mapping, deduplication, SQLite loading, with tests and CI on every push.</p>
+        <a href="https://github.com/Reaver1000/etl-data-pipeline">github.com/Reaver1000/etl-data-pipeline</a>
+      </div>
+      <div class="proj">
+        <h3>Remote Job Engine</h3>
+        <p>Job discovery with AI scoring. Polls 30+ ATS boards, scores postings for fit using LLMs, tailors CVs. The tooling behind my own job search, in daily use.</p>
+        <a href="https://github.com/Reaver1000/remote-job-engine">github.com/Reaver1000/remote-job-engine</a>
+      </div>
+      <div class="proj">
+        <h3>AI Email Summariser</h3>
+        <p>ML + GPT email classification. Gmail/IMAP integration, interactive learning, GPT-powered summarization.</p>
+        <a href="https://github.com/Reaver1000/Ai-Email-summariser">github.com/Reaver1000/Ai-Email-summariser</a>
+      </div>
+      <div class="proj">
+        <h3>SQL Query Builder</h3>
+        <p>Interactive SQL playground. Streamlit + DuckDB with 55 tested templates: joins, windows, CTEs, cohorts, RFM analytics.</p>
+        <a href="https://github.com/Reaver1000/sql-query-builder">github.com/Reaver1000/sql-query-builder</a>
+      </div>
+      <div class="proj">
+        <h3>Data Analysis Demo</h3>
+        <p>Reproducible SQL + Python analytics. End-to-end e-commerce analysis pipeline: pandas, charting, customer segmentation, automated reporting.</p>
+        <a href="https://github.com/Reaver1000/data-analysis-demo">github.com/Reaver1000/data-analysis-demo</a>
+      </div>
+      <div class="proj">
+        <h3>Finance Dashboard</h3>
+        <p>Full-stack analytics dashboard. TypeScript and React finance analytics with PostgreSQL, REST APIs, and advanced SQL — fintech-style reporting.</p>
+        <a href="https://github.com/Reaver1000/finance-dashboard">github.com/Reaver1000/finance-dashboard</a>
+      </div>
     </div>
   </section>
 
-  <section id="background">
-    <h2>Background</h2>
-    <p>I am a career-changer with an operations foundation, not a lifelong coder — and that is the value: five years analysing call quality at Lloyds Banking Group, two years as a Windows system administrator, eight years at Deutsche Post, and currently running print production at Amazon. Since 2022 I completed a BSc (Hons) in Computing and IT (Open University, 2026) while working full time, and built the project portfolio above. I have not yet held a professional software engineering title; I am looking for the first one, and I bring operational maturity most juniors do not have.</p>
+  <section id="background" data-reveal>
+    <h2><span class="no">//03</span> background</h2>
+    <div class="story">
+      <p>I am a career-changer with an operations foundation, not a lifelong coder — and that is the value: five years analysing call quality at Lloyds Banking Group, two years as a Windows system administrator, eight years at Deutsche Post, and currently running print production at Amazon. Since 2022 I completed a BSc (Hons) in Computing and IT (Open University, 2026) while working full time, and built the project portfolio above. I have not yet held a professional software engineering title; I am looking for the first one, and I bring operational maturity most juniors do not have.</p>
+    </div>
   </section>
 
-  <section id="faq">
-    <h2>Common questions</h2>
+  <section id="faq" data-reveal>
+    <h2><span class="no">//04</span> common questions</h2>
     <details>
       <summary>Is David Buchan available for remote AI or automation engineering roles?</summary>
       <p>Yes. David Buchan is available for fully remote roles starting November 2026. He is based in Erfurt, Germany, and as a British citizen with a UK address he can also take UK-remote roles.</p>
@@ -164,12 +358,24 @@
     </details>
   </section>
 
-  <footer>
-    <p>Contact: <a href="mailto:davidbuchan1000@googlemail.com">davidbuchan1000@googlemail.com</a> ·
-       <a href="https://github.com/Reaver1000">GitHub — Reaver1000</a> ·
-       <a href="https://www.linkedin.com/in/david-a-buchan/">LinkedIn</a></p>
-    <p>Last updated: October 2026. This site is the canonical source of truth about David Buchan for recruiters, AI assistants, and search engines.</p>
+  <footer data-reveal>
+    <p>contact: <a href="mailto:davidbuchan1000@googlemail.com">davidbuchan1000@googlemail.com</a> ·
+       <a href="https://github.com/Reaver1000">github.com/Reaver1000</a> ·
+       <a href="https://www.linkedin.com/in/david-a-buchan/">linkedin.com/in/david-a-buchan</a></p>
+    <p class="last-line">Last updated: October 2026. This site is the canonical source of truth about David Buchan for recruiters, AI assistants, and search engines.</p>
   </footer>
 </main>
+<script>
+(function(){
+  var els=document.querySelectorAll("[data-reveal]");
+  if(!("IntersectionObserver" in window)||window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    els.forEach(function(e){e.classList.add("in")});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target);} });
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
 </body>
 </html>
