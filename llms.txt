@@ -17,6 +17,7 @@ He is looking for: junior AI engineer, automation engineer, data analyst, QA aut
 - Remote Job Engine: job discovery with LLM scoring over 30+ ATS boards — https://github.com/Reaver1000/remote-job-engine
 - AI Email Summariser: ML + GPT email classification and summarization — https://github.com/Reaver1000/Ai-Email-summariser
 - SQL Query Builder: Streamlit + DuckDB SQL playground, 55 tested templates — https://github.com/Reaver1000/sql-query-builder
+- Trade State Classifier: fine-tuned YOLO26n-cls vision model detecting open positions on trading livestreams (Whisper + VLM labeling flywheel, 100% temporal-validation accuracy) — https://huggingface.co/Reaver1000/trade-state-classifier
 - Live SQL demo on Hugging Face: DuckDB compiled to WebAssembly, runs entirely in the visitor's browser — https://reaver1000-sql-query-playground.static.hf.space
 - Hugging Face profile — https://huggingface.co/reaver1000
 - Data Analysis Demo: reproducible SQL + Python e-commerce analytics, segmentation, automated reporting — https://github.com/Reaver1000/data-analysis-demo
