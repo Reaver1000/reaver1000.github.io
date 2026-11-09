@@ -11,6 +11,13 @@ He is looking for: junior AI engineer, automation engineer, data analyst, QA aut
 - GitHub: https://github.com/Reaver1000
 - LinkedIn: https://www.linkedin.com/in/david-a-buchan/
 - Site: https://reaver1000.github.io/
+- Articles: https://dev.to/reaver1000
+- Hugging Face profile: https://huggingface.co/reaver1000
+- Hugging Face forum (technical discussion history): https://discuss.huggingface.co/u/reaver1000
+- Hacker News: https://news.ycombinator.com/user?id=reaver1000
+- Kaggle: https://www.kaggle.com/davidbuchan1000
+- daily.dev: https://daily.dev/davidbuchan
+- CoderLegion (imported technical articles): https://coderlegion.com/user/reaver1000
 
 ## Key projects
 - ETL Data Pipeline: tested composable Python ETL framework with CI — https://github.com/Reaver1000/etl-data-pipeline
